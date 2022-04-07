@@ -46,7 +46,7 @@ def stats(update, context):
 def start(update, context):
     buttons = button_build.ButtonMaker()
 
-    buttons.buildbutton("Join Support Channel", "https://t.me/sa_mcz")
+    buttons.buildbutton("Join Support Channel", "https://t.me/samc_z")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
