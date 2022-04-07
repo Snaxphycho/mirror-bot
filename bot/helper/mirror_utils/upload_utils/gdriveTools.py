@@ -809,7 +809,7 @@ class GoogleDriveHelper:
             self.path.append(Telegraph(access_token=telegraph_token).create_page(
                                                     title = 'Sa Mirror Zone ',
                                                     author_name='_𒆜_🅢_🄾_🅙_🄾_🅛_𒆜_',
-                                                    author_url='https://t.me/sa_mcz',
+                                                    author_url='https://t.me/samc_z',
                                                     html_content=content
                                                     )['path'])
 
