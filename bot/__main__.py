@@ -46,7 +46,7 @@ def stats(update, context):
 def start(update, context):
     buttons = button_build.ButtonMaker()
 
-    buttons.buildbutton("Join Support Channel", "https://t.me/sa_mcz")
+    buttons.buildbutton("Join Support Channel", "https://t.me/samc_z")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
@@ -156,7 +156,7 @@ help_string_telegraph = f'''<br>
 help = Telegraph(access_token=telegraph_token).create_page(
         title='Telegraph File Wiew ',
         author_name='_𒆜_🅢_🄾_🅙_🄾_🅛_𒆜_',
-        author_url='https://t.me/sa_mirror_bot',
+        author_url='https://t.me/samc_z',
         html_content=help_string_telegraph,
     )["path"]
 
