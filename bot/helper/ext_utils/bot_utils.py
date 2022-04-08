@@ -128,7 +128,8 @@ def get_readable_message():
                 globals()['PAGE_NO'] -= 1
             start = COUNT
         for index, download in enumerate(list(download_dict.values())[start:], start=1):
-            msg += f"\n<b>➜Filename:</b> <code>{download.name()}</code>"
+            msg += f"\n\n\n<b>➜Bot Started</b>
+            msg += f"\n<b>➜File Name:</b> <code>{download.name()}</code>"
             msg += f"\n\n<b>➜Status:</b> <i>{download.status()}</i>"
             if download.status() not in [
                 MirrorStatus.STATUS_ARCHIVING,
@@ -142,7 +143,8 @@ def get_readable_message():
                     msg += f"\n\n<b>➜Uploaded:</b> <code>{get_readable_file_size(download.processed_bytes())}</code> of <code>{download.size()}</code>"
                 else:
                     msg += f"\n\n<b>➜Downloaded:</b> <code>{get_readable_file_size(download.processed_bytes())}</code> of <code>{download.size()}</code>"
-                msg += f"\n\n<b>➜Speed:</b> <code>{download.speed()}</code> <b>ETA:</b> <code>{download.eta()}</code>"
+                msg +=msg f"\n\n<b>➜Speed:</b> <code>{download.speed()}</code>"
+                msg += f"\n\n<b>ETA:</b> <code>{download.eta()}</code>"
                 try:
                     msg += f"\n\n<b>➜Seeders:</b> <code>{download.aria_download().num_seeders}</code>" \
                            f"\n<b>➜Peers:</b> <code>{download.aria_download().connections}</code>"
